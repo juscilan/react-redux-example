@@ -9,14 +9,14 @@ export default function Component2() {
 	const [valueText, setValueText] = useState() 
 
 	function handleChange(e) {
-			setValueText(e.target.value)
+		setValueText(e.target.value)
 	}
 
 	return (
 		<>
-				<h1>Component 2 : { result }</h1>
+				<h1>Component 02 : { result }</h1>
 				<input type="text" onChange={handleChange} />
-				<button onClick={()=>{ dispath(setPayloadAction(valueText))	}}>Send</button>
+				<button onClick={()=> dispath(setPayloadAction(valueText)) }>Send</button>
 		</>
 	)
 }

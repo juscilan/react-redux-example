@@ -1,4 +1,4 @@
-const reducer = (state = 0, action) => {
+const reducer = (state = '', action) => {
   switch(action.type) {
     case 'CHANGE_INPUT':
       return action.payload

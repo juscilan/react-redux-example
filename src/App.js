@@ -8,7 +8,6 @@ function App() {
       <Component1/>
       <Component2/>
     </>
-
   );
 }
 
