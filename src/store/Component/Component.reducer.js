@@ -1,4 +1,4 @@
-export default function reducer (state = 0, action) {
+const reducer = (state = 0, action) => {
   switch(action.type) {
     case 'CHANGE_INPUT':
       return action.payload
@@ -6,3 +6,5 @@ export default function reducer (state = 0, action) {
 	  return state
   }
 }
+
+export default reducer 
