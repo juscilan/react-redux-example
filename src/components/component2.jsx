@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setPayloadAction } from '../store/Component/Camponent.actions'
 
-export default function Componente2() {
+export default function Component2() {
 	const result = useSelector(state => state.value)
 	const dispath = useDispatch()
 
@@ -14,7 +14,7 @@ export default function Componente2() {
 
 	return (
 		<>
-				<h1>Componente 2 : { result }</h1>
+				<h1>Component 2 : { result }</h1>
 				<input type="text" onChange={handleChange} />
 				<button onClick={()=>{ dispath(setPayloadAction(valueText))	}}>Send</button>
 		</>
