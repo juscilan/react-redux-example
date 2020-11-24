@@ -14,9 +14,17 @@ export default function Component2() {
 
 	return (
 		<>
-				<h1>Component 02 : { result }</h1>
-				<input type="text" onChange={handleChange} />
-				<button onClick={()=> dispath(setPayloadAction(valueText)) }>Send</button>
+      <h1 
+        data-testid="h1-test">Component 02 : { result }</h1>
+      
+      <input 
+        data-testid="input-test"
+        type="text" 
+        onChange={handleChange} />
+
+      <button 
+        data-testid="btn-send-test" 
+        onClick={()=> dispath(setPayloadAction(valueText)) }>Send</button>
 		</>
 	)
 }
